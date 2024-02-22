@@ -1,0 +1,17 @@
+.progressBar {
+    width: 100px;
+    height: 20px;
+    background-color: rgb(187, 178, 246);
+    position: relative;
+}
+
+.progressBar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: var(--progress);
+    transition: all 0.3s ease 0s;
+    height: 100%;
+    background-color: peachpuff;
+}
