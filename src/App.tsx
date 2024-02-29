@@ -9,11 +9,7 @@ import dayjs from "dayjs";
 
 type Time = { seconds: number; minutes: number };
 
-// Todo
-// ! Добавить переключалку на русский текст
-// ! localStorage
-// https://www.npmjs.com/package/random-words
-// Подключить Yandex Translate API
+[{ errorsCount: 10, accuracy: "30%" }, {}, {}, {}];
 
 function myGenerateText(count: number): string {
     const generatedText = generate(count);
