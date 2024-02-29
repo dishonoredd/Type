@@ -1,18 +1,20 @@
 import { Button } from "antd";
 
 type ResetProps = {
-    onClick: () => void;
+  onClick: () => void;
 };
 
 export function ResetButton(props: ResetProps) {
-    return (
-        <Button
-            type="primary"
-            onClick={() => {
-                props.onClick();
-            }}
-        >
-            Reset
-        </Button>
-    );
+  return (
+    <Button
+      style={{ transform: "scale(1.3)" }}
+      size="large"
+      type="primary"
+      onClick={() => {
+        props.onClick();
+      }}
+    >
+      Reset
+    </Button>
+  );
 }
